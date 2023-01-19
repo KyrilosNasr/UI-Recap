@@ -1,45 +1,7 @@
 // inport variables
 
 @import "/src/assets/variables/leon-variables";
-
-/* global rules start */
-
-div.content-container {
-  font-family: "Work Sans", sans-serif;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 60px;
-  padding-left: 15px;
-}
-
-/* small screen */
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-
-/* medium screen */
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-/* large screens */
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-/* global rules end */
+@import "/src/assets/basic/leon-basics";
 
 /* Start Component */
 .special-heading {
@@ -57,14 +19,7 @@ div.content-container {
   color: #797979;
 }
 
-@media (max-width: 767px) {
-  .special-heading {
-    font-size: 60px;
-  }
-  .special-heading + p {
-    margin-top: -20px;
-  }
-}
+
 /* End Component */
 
 /* Start Header */
@@ -236,13 +191,6 @@ div.content-container {
   display: flex;
   margin-bottom: 40px;
 }
-
-@media (max-width: 767px) {
-  .services .services-columns .serv {
-    flex-direction: column;
-    text-align: center;
-  }
-}
 .services .services-columns .col .serv .icons {
   color: $main-color;
   flex-basis: 60px;
@@ -279,9 +227,5 @@ div.content-container {
 .services .services-columns .col .image img {
   width: 260px;
 }
-@media (max-width: 1200px) {
-  .img-col {
-    display: none;
-  }
-}
+
 /* End Services */
